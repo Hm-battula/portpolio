@@ -1,0 +1,274 @@
+/* Mobile View */
+@media (max-width: 768px) {
+    .Skill {
+      flex-direction: row; /* Stack sections vertically */
+      gap: 1rem; /* Add spacing between stacked sections */
+    }
+  
+    .section {
+      width: 100%; /* Full width for each section */
+    }
+  
+    h2 {
+      text-align: left; /* Keep headings aligned to the left */
+      margin-bottom: 0.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .au {
+      flex-direction: column;  /* Stacks the items vertically on medium devices */
+      align-items: center;     /* Centers the content */
+      gap: 2rem;               /* Reduces the gap between the elements */
+    }
+  
+    .au img {
+      width: 80%; /* Images take more space on smaller screens */
+      margin: 0 auto;  /* Center the image */
+    }
+  
+    .au p {
+      width: 80%; /* Adjust paragraph width to be more mobile-friendly */
+      margin: 0 auto;
+      margin-left: 0; /* Removes left margin */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .au p {
+      font-size: 0.9rem;  /* Slightly reduce the font size for smaller screens */
+    }
+  }
+  
+  
+  
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .navbar-links {
+          display: flex;
+          flex-direction: column;
+          background-color: #9a9595;
+          position: absolute;
+          top: 60px;
+          right: -20px;
+          width:50%;
+          overflow: hidden;
+          max-height: 0;
+        }
+  
+        .navbar-links a {
+          text-align: center;
+          margin: 5px 0;
+        }
+  
+        .menu-toggle {
+          display: block;
+        }
+  
+        .navbar-links.open {
+          max-height: 300px; /* Adjust height based on your links */
+        }
+  
+        .content {
+          flex-direction: column;
+          margin-top: 10px; /* Adjust margin to accommodate the expanded navbar*/
+        }
+  
+        .image-container {
+          order: 1;
+        }
+  
+        .about {
+          order: 2;
+        }
+      } 
+/* Responsive Design */
+
+
+  /* education */
+ 
+  @media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items:left;
+        padding: 10%;
+    }
+
+    .col-4 {
+        width: 100%;
+        margin-bottom: 15px; /* Space between cards */
+    }
+
+    .education-card {
+       
+        padding:10px 120px; /* Reduce padding */
+        border-radius: 6px; /* Slightly rounded corners */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        text-align: center;
+            min-width: 300px;
+            max-width: 700px;
+            margin:auto auto;
+    }
+
+    .education-card h3 {
+        font-size: 2rem;
+    }
+
+    .education-card p {
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+
+    .education-card:hover {
+        transform: none;
+        box-shadow: 0 4px 6px var(--hover-shadow-color);
+    }
+}
+
+/* skills */
+@media (max-width: 768px) {
+  .skill-know {
+    flex-direction: column; /* Stack items */
+    align-items: center;
+  }
+
+  .flip-card {
+    width: 90%; /* Make the card take most of the screen width */
+    height: 180px; /* Reduce height slightly */
+    margin: 10px; /* Reduce margin for better spacing */
+  }
+
+  .flip-card-front, .flip-card-back {
+    font-size: 14px; /* Reduce font size for better fit */
+  }
+
+  .list-item {
+    flex-direction:row;
+    text-align: center;
+  }
+
+  .list-item img {
+    margin-bottom: 5px; /* Add spacing below images */
+  }
+  
+}
+/*projects */
+@media (max-width: 768px) {
+
+
+  .abstract {
+    width: 200%;
+    height: auto;
+    background-color: hsl(58, 100%, 50%);
+  font-size: 18px;
+  text-align: justify;
+  }
+
+
+  .project h2 {
+    font-size: 25px; /* Slightly smaller for mobile */
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .sensor {
+      width: 200%;
+      text-align: center;
+  }
+  .ses {
+    font-size: 25px; /* Adjust font size for smaller screens */
+    text-align: center;
+  margin: 10px 90px;
+
+  }
+
+  .sensor li {
+      font-size: 14px;
+      padding: 10px;
+      margin-bottom: 5px;
+  }
+
+  .file {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    width: 50%; /* Make it full width on mobile */
+    max-width: 300px; /* Limit size */
+    margin: 10px auto;
+  }
+  
+  .file a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .file:hover {
+    background-color: #0056b3;
+  }
+}
+
+
+
+/* File Button */
+
+
+/* cont */
+@media screen and (max-width: 768px) {
+
+  .contact_form,
+  .contact-info {
+    width: 100%;
+    max-width: 100%;
+  
+  }
+
+  .contact-container {
+    padding: 30px 15px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .contact-form, .contact-info {
+    padding: 15px;
+  }
+.contact-info{
+  margin-left: 25px;
+}
+  .contact-form h3 {
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .info-item i {
+    font-size: 20px;
+  }
+
+  .info-item h4 {
+    font-size: 16px;
+  }
+
+  .info-item p {
+    font-size: 14px;
+  }
+}
